@@ -18,7 +18,7 @@ Chaque événement aura sa propre table et l’ordre d’affichage, (DESC), devr
 
 # Installation
 
-Installation de NodeJS => https://nodejs.org/
+Installation de NodeJS et npm => https://www.npmjs.com ET https://nodejs.org/
 
 ```
 $ git clone https://github.com/sebabass/gte-izypay.git
