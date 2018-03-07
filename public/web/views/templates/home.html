@@ -1,0 +1,39 @@
+<div id="home">
+    <% _.each(transactionsTop, function(transactions) { %>
+        <div class="sep"></div>
+        <table class="table table-bordered table-striped">
+            <thead>
+            <tr>
+                <th scope="col"><span class="sort-by" data-type="id">#</span></th>
+                <th scope="col"><span class="sort-by" data-type="event-name">event name</span></th>
+                <th scope="col"><span class="sort-by" data-type="merchant">merchant</span></th>
+                <th scope="col"><span class="sort-by" data-type="terminal">terminal</span></th>
+                <th scope="col"><span class="sort-by" data-type="status">status</span></th>
+                <th scope="col"><span class="sort-by" data-type="card-id">card id</span></th>
+                <th scope="col"><span class="sort-by" data-type="card-type">card type</span></th>
+                <th scope="col"><span class="sort-by" data-type="amount">amount</span></th>
+                <th scope="col"><span class="sort-by" data-type="currency">currency</span></th>
+                <th scope="col"><span class="sort-by" data-type="country">country</span></th>
+                <th scope="col"><span class="sort-by" data-type="created">created</span></th>
+            </tr>
+            </thead>
+            <tbody>
+            <% _.each(transactions, function(t) { %>
+                <tr>
+                    <th scope="row"><%= t.id %></th>
+                    <td><%= t.event_name %></td>
+                    <td><%= t.merchant %></td>
+                    <td><%= t.terminal %></td>
+                    <td><span class="status-<%= (t.status) ? 'green' : 'red' %>"></span></td>
+                    <td><%= t.card_id %></td>
+                    <td><%= t.card_type %></td>
+                    <td><%= t.amount %></td>
+                    <td><%= t.currency %></td>
+                    <td><%= t.country %></td>
+                    <td><%= t.created %></td>
+                </tr>
+            <% }) %>
+            </tbody>
+        </table>
+    <% }) %>
+</div>
