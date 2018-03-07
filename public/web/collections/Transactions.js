@@ -24,10 +24,6 @@ var Transactions = Backbone.Collection.extend({
 
     initialize: function (models, options) {
         return this;
-    },
-
-    first: function (n) {
-        return _.first(this.models, n);
     }
 });
 

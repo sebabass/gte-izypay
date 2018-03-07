@@ -28,17 +28,6 @@ app.use(function (req, res, next) {
     res.status(404).send('<html>not found</html>');
 });
 
-app.use(function (err, req, res, next) {
-    console.log(err);
-    res.status(err.statusCode || err.status || 500);
-    if (req.xhr || req.accepts(['html', 'json']) === 'json') {
-        res.json({err: err.message});
-    } else {
-        console.log('web-server error', err);
-        res.status(500).send('<html>internal</html>');
-    }
-});
-
 // Launch HTTP server
 var port = process.env.PORT || 3000;
 var server = app.listen(port, function () {

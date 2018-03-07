@@ -1,4 +1,3 @@
-var _ = require('underscore');
 var Backbone = require('backbone');
 var app = require('./app');
 var HomeView = require('../views/home');

@@ -6,13 +6,6 @@ L'objectif c'est de créer une application permettant d’afficher dans une page
 
 Chaque événement aura sa propre table et l’ordre d’affichage, (DESC), devra se faire en se basant sur le total de transactions de chaque événement.
 
-# Installation
-```
-$ git clone https://github.com/sebabass/gte-izypay.git
-$ npm install
-$ node app.js
-```
-
 # Les technologies et langages
 * Javascript
 * HTML
@@ -22,3 +15,12 @@ $ node app.js
 * Express
 * Less
 * Bootstrap v3.3.7
+
+# Installation
+```
+$ git clone https://github.com/sebabass/gte-izypay.git
+$ cd gte-izypay
+$ npm install
+$ node app.js
+```
+Go => http://localhost:3000/
