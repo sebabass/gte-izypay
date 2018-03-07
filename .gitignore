@@ -1,0 +1,9 @@
+# IDE
+/.idea
+.DS_Store
+
+# Dependencies
+/node_modules
+
+# Compiled files
+/public/css/style.css
